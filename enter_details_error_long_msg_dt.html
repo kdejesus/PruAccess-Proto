@@ -6,21 +6,21 @@
     <title>Enter details Error long message</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <script src="jquery-3.4.1.min.js/jquery-3.4.1.min.js"></script>
-    <script src="popper.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-datepicker3.css" />
-    <link rel="stylesheet" href="style.css">
-    <script src="util.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/util.js"></script>
 </head>
 
 <body>
     <div class="row">
         <div class="col my-3 mx-5 logo">
-            <img src="pru-logo.png" />
+            <img src="img/pru-logo.png" />
         </div>
     </div>
 
@@ -32,7 +32,7 @@
                 you need an immediate assistance, please contact Prudential Customer Service on 1800 333 0333.</h5>
         </div>
 
-        <div class="col-lg-5 col-sm-12 my-5 text-muted" style="margin: 0 auto; float: none; margin-bottom: 10px;">
+        <div class="col-lg-5 col-sm-8 my-5 text-muted" style="margin: 0 auto; float: none; margin-bottom: 10px;">
             <form id="login_form" name="login_form">
                 <div class="card">
                     <h5 class="card-title text-center mt-4">Enter Your Details</h5>
@@ -53,7 +53,7 @@
                             <span class="label">NRIC/Passport Number</span>
                         </label>
                         <span class="text-left text-danger err_msg" name="input_err"><img
-                                src="round_report_problem_black_18dp.png" class="img-fluid" /><small> We cannot find
+                                src="img/round_report_problem_black_18dp.png" class="img-fluid" /><small> We cannot find
                                 your information in our system.</small></span>
                         <div class="input-group date mt-5" data-provide="datepicker" id="datepicker">
                             <input type="text" id="inp" name="dob_input" placeholder="&nbsp;"
@@ -61,11 +61,11 @@
                             <span class="label" style="top: 9px;">Date of Birth</span>
                             <div class="input-group-addon float-right" id="dp_icon"
                                 style="border-bottom: 2px solid #808080;">
-                                <img src="1x/baseline_keyboard_arrow_down_black_18dp.png" />
+                                <img src="img/baseline_keyboard_arrow_down_black_18dp.png" />
                             </div>
                         </div>
                         <span class="text-left text-danger err_msg" name="dob_err"><img
-                                src="round_report_problem_black_18dp.png" class="img-fluid" /><small> The Date of Birth
+                                src="img/round_report_problem_black_18dp.png" class="img-fluid" /><small> The Date of Birth
                                 you added in doesn't match to our record.</small></span>
                         <div class="text-center mt-4">
                             <button type="button" class="btn btn-outline-danger px-5">SUBMIT</button>
