@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Enter details Error long message</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="jquery-3.4.1.min.js/jquery-3.4.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-datepicker3.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="util.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col my-3 mx-5 logo">
+            <img src="pru-logo.png" />
+        </div>
+    </div>
+
+    <div class="row text-left text-muted py-4" style="background: #f0f0f0;">
+        <div class="alert alert-dark pru-alert" role="alert">
+            <h5 class="display-5 m-2">Currently our system is temporarily unavailable due to system maintenance. The
+                system is expected to be down from approx. 10:00 AM to 2:00 PM (SGT)
+                on May 17 2019. Please re-try logging in after the timeline. We apologise for any inconvenience. Should
+                you need an immediate assistance, please contact Prudential Customer Service on 1800 333 0333.</h5>
+        </div>
+
+        <div class="col-lg-5 col-sm-12 my-5 text-muted" style="margin: 0 auto; float: none; margin-bottom: 10px;">
+            <form id="login_form" name="login_form">
+                <div class="card">
+                    <h5 class="card-title text-center mt-4">Enter Your Details</h5>
+                    <hr>
+                    <div class="card-body col-lg-10 col-sm-12"
+                        style="margin: 0 auto; float: none; margin-bottom: 10px;">
+                        <p class="card-text" id="note">
+                            <strong>Important Note: </strong>this SMS notification is intended to inform you the status
+                            of your proposal for insurance coverage based on declarations <span id="dots">...</span>
+                            <span id="read_more"> received as of the date of the SMS. Please see your policy contract for the
+                            full terms and conditions of your policy. Prudential reserves the right to amend the
+                            policy terms where any additional declarations are received from you subsequent to this
+                            notification and/or in circumstances where this has been erroneously sent.</span>
+                            <a class="text-danger" href="#note" id="btn_read_more"><small>Read more</small></a></p>
+
+                        <label for="inp" class="inp mt-2">
+                            <input type="text" id="inp" placeholder="&nbsp;" class="username_input" maxlength="20">
+                            <span class="label">NRIC/Passport Number</span>
+                        </label>
+                        <span class="text-left text-danger err_msg" name="input_err"><img
+                                src="round_report_problem_black_18dp.png" class="img-fluid" /><small> We cannot find
+                                your information in our system.</small></span>
+                        <div class="input-group date mt-5" data-provide="datepicker" id="datepicker">
+                            <input type="text" id="inp" name="dob_input" placeholder="&nbsp;"
+                                class="dob_input form-control" style="border: 0; border-bottom: 2px solid #808080;">
+                            <span class="label" style="top: 9px;">Date of Birth</span>
+                            <div class="input-group-addon float-right" id="dp_icon"
+                                style="border-bottom: 2px solid #808080;">
+                                <img src="1x/baseline_keyboard_arrow_down_black_18dp.png" />
+                            </div>
+                        </div>
+                        <span class="text-left text-danger err_msg" name="dob_err"><img
+                                src="round_report_problem_black_18dp.png" class="img-fluid" /><small> The Date of Birth
+                                you added in doesn't match to our record.</small></span>
+                        <div class="text-center mt-4">
+                            <button type="button" class="btn btn-outline-danger px-5">SUBMIT</button>
+                            <p class="text-nowrap mt-4">Didn't receive? <a class="text-danger" href="#">Resend OTP</a>
+                            </p>
+                            <p>Not your number <a class="text-danger" href="#">Contact Us</a></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="mx-5 my-5 text-center text-muted">
+        <p class="d-none d-lg-block">Disclaimer and Intellectual Rights
+            <span style='font-size:20px;' class="px-2">&#10072;</span> Privacy Notice</p>
+        <div class="d-block d-lg-none">
+            <p>Disclaimer and Intellectual Rights</p>
+            <p>Privacy Notice</p>
+            <p>GDRP Notice</p>
+        </div>
+        <p>Copyright &copy; 2018 Prudential Assurance Company Singapore (Pte) Limited.
+            All rights reserved.</p>
+    </div>
+</body>
+
+</html>

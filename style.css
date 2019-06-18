@@ -1,0 +1,89 @@
+.inp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+
+.label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    font-size: 16px;
+    color: #808080;
+    font-weight: 500;
+    transform-origin: 0 0;
+    transition: all .2s ease;
+}
+
+.border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #808080;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all .15s ease;
+}
+
+input {
+    -webkit-appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: inherit;
+    padding: 12px 0;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #808080;
+    background: none;
+    border-radius: 0;
+    color: #808080;
+    transition: all .15s ease;
+}
+
+input:hover {
+    background: rgba(#808080, .03);
+}
+
+input:not(:placeholder-shown)+span {
+    color: #808080;
+    transform: translateY(-26px) scale(.75)
+}
+
+input:focus {
+    background: none;
+    outline: none;
+}
+
+input:focus+span {
+    color: #808080;
+    transform: translateY(-26px) scale(.75)
+}
+
+input:focus+.border {
+    transform: scaleX(1)
+}
+
+/*
+    Pru content CSS
+*/
+
+.logo {
+    width: 232px;
+    height: 61.9px;
+}
+
+.btn {
+	border: 2px solid;
+}
+
+.pru-alert {
+    background-color: #68737a;
+    color: #ffffff;
+}
+
+#read_more {
+    display: none;
+}
